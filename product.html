@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product | Nexorapremier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar container">
+      <a href="index.html" class="brand">Nexorapremier</a>
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="product.html" class="active">Product</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-hero small-page-hero">
+    <div class="container reveal">
+      <h1>Product Details</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container product-layout">
+      <div class="product-image reveal">
+        <img src="assets/product-1.jpg" alt="Luxury Black Jacket">
+      </div>
+
+      <div class="product-details reveal">
+        <span class="section-tag">Nexorapremier Exclusive</span>
+        <h2>Luxury Black Jacket</h2>
+        <p class="price big-price">$149</p>
+        <p>
+          A premium dark luxury jacket crafted for elegance, confidence, and modern city style.
+          Designed with clean structure and a refined silhouette.
+        </p>
+
+        <div class="product-meta">
+          <p><strong>Category:</strong> Men</p>
+          <p><strong>Size:</strong> S / M / L / XL</p>
+          <p><strong>Color:</strong> Black</p>
+        </div>
+
+        <div class="product-actions">
+          <input type="number" value="1" min="1" class="qty-input">
+          <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

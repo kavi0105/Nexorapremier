@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | Nexorapremier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar container">
+      <a href="index.html" class="brand">Nexorapremier</a>
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html" class="active">Checkout</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-hero small-page-hero">
+    <div class="container reveal">
+      <h1>Checkout</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container checkout-layout">
+      <form class="checkout-form reveal">
+        <h3>Billing Details</h3>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Phone Number" required>
+        <input type="text" placeholder="Street Address" required>
+        <input type="text" placeholder="City" required>
+        <input type="text" placeholder="Country" required>
+        <button type="submit" class="btn btn-primary full-btn">Place Order</button>
+      </form>
+
+      <div class="cart-summary reveal">
+        <h3>Your Order</h3>
+        <p>Luxury Black Jacket <span>$149</span></p>
+        <p>Signature Leather Bag <span>$129</span></p>
+        <p>Shipping <span>$20</span></p>
+        <p class="total">Total <span>$298</span></p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

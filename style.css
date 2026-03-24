@@ -609,11 +609,108 @@ a {
     height: 42px;
   }
 }
+/* NexaBox */
+.nexabox-hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.88)),
+    url("assets/banner.jpg") center/cover no-repeat;
+}
+
+.nexabox-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.nexabox-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.35s ease;
+}
+
+.nexabox-card:hover {
+  transform: translateY(-8px);
+}
+
+.nexabox-card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.nexabox-content {
+  padding: 24px;
+}
+
+.nexabox-content h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.nexabox-content p {
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.nexabox-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.info-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.info-box i {
+  font-size: 2rem;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.info-box h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.info-box p {
+  color: var(--muted);
+}
+
+.nexabox-cta {
+  text-align: center;
+  padding: 50px 30px;
+  border-radius: 20px;
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+.nexabox-cta h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 12px;
+}
+
+.nexabox-cta p {
+  max-width: 700px;
+  margin: 0 auto 24px;
+  color: var(--muted);
+}
 
 @media (max-width: 580px) {
   .products-grid,
   .categories-grid,
-  .testimonial-grid {
+  .testimonial-grid,
+  .nexabox-grid,
+  .nexabox-info-grid {  
     grid-template-columns: 1fr;
   }
 

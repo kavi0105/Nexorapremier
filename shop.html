@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shop | Nexorapremier</title>
+  <title>Shop | Nexora</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 <body>
   <header class="header">
     <nav class="navbar container">
-      <a href="index.html" class="brand">Nexorapremier</a>
+      <a href="index.html" class="brand">Nexora</a>
       <button class="menu-toggle" id="menuToggle">
         <i class="fa-solid fa-bars"></i>
       </button>
@@ -27,8 +27,16 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-icons">
-        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
-      </div>
+  <button id="themeToggle" class="theme-switch" aria-label="Toggle theme">
+  <span class="theme-switch-track">
+    <span class="theme-switch-thumb"></span>
+  </span>
+</button>
+
+  <a href="cart.html" aria-label="Cart">
+    <i class="fa-solid fa-bag-shopping"></i>
+  </a>
+</div>
     </nav>
   </header>
 
@@ -46,7 +54,7 @@
           <img src="assets/product-1.jpg" alt="">
           <div class="product-info">
             <h3>Luxury Black Jacket</h3>
-            <p class="price">$149</p>
+            <p class="price">Rs149</p>
             <a href="product.html" class="card-btn">View Product</a>
           </div>
         </div>

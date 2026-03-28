@@ -632,7 +632,7 @@ body.light-mode .cart-item {
 .nexabox-hero {
   background:
     linear-gradient(var(--overlay-dark), var(--overlay-dark-2)),
-    url("assets/banner.jpg") center/cover no-repeat;
+    url("assets/NexaBox-banner.jpg") center/cover no-repeat;
 }
 
 .nexabox-grid {
@@ -749,11 +749,34 @@ body.light-mode .cart-item {
 
 /* Old Money */
 .oldmoney-hero {
-  background:
-    linear-gradient(var(--overlay-dark), var(--overlay-dark-2)),
-    url("assets/banner.jpg") center/cover no-repeat;
+  position: relative;
+  min-height: 100vh;   /* 🔥 FULL SCREEN HEIGHT */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+
+  background: url("assets/banner.jpg") center/cover no-repeat;
 }
 
+/* DARK OVERLAY (keeps text readable) */
+.oldmoney-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.85)
+  );
+  z-index: 1;
+}
+
+/* CONTENT ABOVE IMAGE */
+.oldmoney-hero .container {
+  position: relative;
+  z-index: 2;
+}
 .oldmoney-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -806,6 +829,9 @@ body.light-mode .cart-item {
   background: var(--card);
   border: 1px solid var(--border);
 }
+.oldmoney-hero h1 {
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
 
 .oldmoney-cta h2 {
   font-family: "Cormorant Garamond", serif;
@@ -818,7 +844,14 @@ body.light-mode .cart-item {
   margin: 0 auto 24px;
   color: var(--muted);
 }
+.oldmoney-hero {
+  animation: zoomBg 12s ease-in-out infinite alternate;
+}
 
+@keyframes zoomBg {
+  0% { background-size: 100%; }
+  100% { background-size: 110%; }
+}
 /* Responsive */
 @media (max-width: 1100px) {
   .products-grid {
